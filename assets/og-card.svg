@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <title>Trong Phat Vo — computer science, simulation and machine learning</title>
+  <rect width="1200" height="630" fill="#f4f1e9"/>
+  <text x="64" y="57" fill="#326b61" font-family="Consolas,monospace" font-size="15" letter-spacing="2">TPV. / PORTFOLIO 001</text>
+  <text x="1136" y="57" text-anchor="end" fill="#53615e" font-family="Consolas,monospace" font-size="15" letter-spacing="1">RWTH AACHEN · 2026</text>
+  <path d="M64 79H1136M64 553H1136" stroke="#b9c5bd" stroke-width="1"/>
+  <text x="58" y="247" fill="#20292c" font-family="Georgia,serif" font-size="142" letter-spacing="-9">Trong</text>
+  <text x="58" y="367" fill="#326b61" font-family="Georgia,serif" font-size="126" font-style="italic" letter-spacing="-8">Phat Vo</text>
+  <circle cx="477" cy="345" r="9" fill="#c75c3e"/>
+  <path d="M64 405H604" stroke="#b9c5bd" stroke-width="1"/>
+  <text x="64" y="454" fill="#20292c" font-family="Arial,sans-serif" font-size="27">Computer science, machine learning</text>
+  <text x="64" y="491" fill="#20292c" font-family="Arial,sans-serif" font-size="27">&amp; simulation at RWTH Aachen.</text>
+  <rect x="662" y="117" width="474" height="401" fill="#e4ebe3" stroke="#b9c5bd"/>
+  <text x="680" y="144" fill="#53615e" font-family="Consolas,monospace" font-size="13" letter-spacing="1">FIELD STUDY 01 / CITY MODEL</text>
+  <text x="1118" y="144" text-anchor="end" fill="#53615e" font-family="Consolas,monospace" font-size="13">SCHEMATIC</text>
+  <rect x="680" y="158" width="438" height="319" fill="#edf1e8" stroke="#b9c5bd"/>
+  <g stroke="#91a99f" stroke-width="9" fill="none"><path d="M680 214H1118M680 308H1118M680 409H1118M737 158V477M852 158V477M977 158V477M1070 158V477"/><path d="M680 464L1118 167" stroke="#b0c2b7" stroke-width="4"/></g>
+  <g fill="#dbe6dc" stroke="#9cb2a6"><path d="M752 228h85v63h-85zM867 228h95v63h-95zM991 228h65v63h-65zM751 322h86v74h-86zM867 323h95v73h-95zM991 321h65v75h-65zM752 422h85v42h-85zM866 422h96v42h-96zM992 422h65v42h-65z"/></g>
+  <g fill="#adc5b3" stroke="#749487"><path d="M764 238h23v19h-23zM797 237h27v20h-27zM762 266h53v16h-53zM878 238h28v42h-28zM919 237h30v17h-30zM918 263h30v17h-30zM1002 236h43v22h-43zM1002 267h20v15h-20zM762 332h28v51h-28zM802 332h24v24h-24zM879 334h68v21h-68zM879 363h28v22h-28zM921 363h26v22h-26zM1002 333h42v51h-42zM765 432h59v21h-59zM879 433h26v27h-26zM916 433h32v22h-32zM1003 434h40v20h-40z"/></g>
+  <path d="M700 445L744 412 850 409 890 365 977 307 1070 270 1101 221" fill="none" stroke="#f4f1e9" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M700 445L744 412 850 409 890 365 977 307 1070 270 1101 221" fill="none" stroke="#c75c3e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="700" cy="445" r="6" fill="#c75c3e" stroke="#f4f1e9" stroke-width="3"/><circle cx="1101" cy="221" r="6" fill="#c75c3e" stroke="#f4f1e9" stroke-width="3"/>
+  <text x="680" y="501" fill="#53615e" font-family="Consolas,monospace" font-size="13" letter-spacing=".5">OSM DATA → UNITY WORLD</text>
+  <text x="64" y="590" fill="#53615e" font-family="Consolas,monospace" font-size="15" letter-spacing="1">INFORMATICS / SIMULATION / MACHINE LEARNING</text>
+  <text x="1136" y="590" text-anchor="end" fill="#53615e" font-family="Consolas,monospace" font-size="15">PETEVO.GITHUB.IO</text>
+</svg>

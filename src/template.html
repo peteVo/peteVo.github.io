@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="{{lang}}" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e9">
+  <title>{{meta.title}}</title>
+  <meta name="description" content="{{meta.description}}">
+  <link rel="canonical" href="{{canonical}}">
+  <link rel="alternate" hreflang="en" href="https://petevo.github.io/">
+  <link rel="alternate" hreflang="de" href="https://petevo.github.io/de/">
+  <link rel="alternate" hreflang="vi" href="https://petevo.github.io/vi/">
+  <link rel="alternate" hreflang="x-default" href="https://petevo.github.io/">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="{{meta.title}}">
+  <meta property="og:description" content="{{meta.description}}">
+  <meta property="og:url" content="{{canonical}}">
+  <meta property="og:image" content="https://petevo.github.io/assets/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Trong Phat Vo — computer science, simulation and machine learning">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{meta.title}}">
+  <meta name="twitter:description" content="{{meta.description}}">
+  <meta name="twitter:image" content="https://petevo.github.io/assets/og-card.png">
+  <link rel="icon" href="{{assetPrefix}}assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="{{assetPrefix}}styles.css">
+  <script defer src="{{assetPrefix}}site.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","name":"{{meta.schemaName}}","url":"{{canonical}}","mainEntity":{"@type":"Person","name":"Trong Phat Vo","jobTitle":"{{meta.jobTitle}}","email":"mailto:trong.phat.vo@rwth-aachen.de","url":"https://petevo.github.io/","sameAs":["https://github.com/peteVo"],"worksFor":{"@type":"Organization","name":"RWTH Aachen University"},"affiliation":{"@type":"CollegeOrUniversity","name":"RWTH Aachen University"}}}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">{{ui.skip}}</a>
+  <header class="header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Trong Phat Vo"><span class="brand-mark">TPV<span>.</span></span><span class="brand-name">TRONG PHAT VO</span></a>
+      <nav class="desktop-nav" aria-label="{{ui.primaryNav}}">
+        <a href="#work">{{nav.work}}</a><a href="#study">{{nav.study}}</a><a href="#practice">{{nav.practice}}</a><a href="#contact">{{nav.contact}}</a>
+      </nav>
+      <div class="header-controls">
+        <label class="language-select"><span class="sr-only">{{ui.language}}</span><select data-language aria-label="{{ui.language}}"><option value="en" {{selectedEn}}>EN</option><option value="de" {{selectedDe}}>DE</option><option value="vi" {{selectedVi}}>VI</option></select></label>
+        <button class="icon-control theme-control" type="button" data-theme-toggle data-to-dark="{{ui.toDark}}" data-to-light="{{ui.toLight}}" aria-label="{{ui.toDark}}"><span aria-hidden="true">◐</span></button>
+        <button class="print-control" type="button" data-print aria-label="{{ui.print}}">{{ui.print}}</button>
+        <button class="menu-control" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="{{ui.openMenu}}" data-open-label="{{ui.openMenu}}" data-close-label="{{ui.closeMenu}}"><span></span><span></span></button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="{{ui.mobileNav}}" hidden><a href="#work">{{nav.work}}</a><a href="#study">{{nav.study}}</a><a href="#practice">{{nav.practice}}</a><a href="#contact">{{nav.contact}}</a></nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-top"><span><i class="diamond" aria-hidden="true"></i>{{hero.topline}}</span><span>RWTH AACHEN · 2026</span></div>
+      <div class="hero-layout">
+        <div class="identity">
+          <p class="serial">PORTFOLIO / 001</p>
+          <h1 id="hero-title">Trong<br> <em>Phat Vo</em><span>.</span></h1>
+          <div class="identity-bottom">
+            <p class="role">{{hero.role}}</p>
+            <p class="intro">{{hero.intro}}</p>
+            <a class="cta" href="#work"><span>{{hero.cta}}</span><span aria-hidden="true">↘</span></a>
+          </div>
+        </div>
+        <div class="plate">
+          <div class="plate-head"><span>{{hero.plateHead}}</span><span>{{hero.schematic}}</span></div>
+          <div class="map" role="img" aria-label="{{hero.mapAlt}}">
+            <svg viewBox="0 0 660 520" aria-hidden="true" focusable="false">
+              <defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".8" fill="currentColor"/></pattern></defs>
+              <rect width="660" height="520" fill="url(#dots)" class="dots"/>
+              <g class="roads"><path d="M0 77H660M0 222H660M0 368H660M82 0V520M244 0V520M422 0V520M574 0V520"/><path d="M0 495L660 18" class="diagonal"/></g>
+              <g class="blocks"><path d="M104 99h111v97H104zM266 98h128v99H266zM446 95h100v100H446zM106 244h107v93H106zM264 246h130v92H264zM446 245h100v90H446zM107 390h110v102H107zM267 390h126v97H267zM446 389h102v96H446z"/></g>
+              <g class="buildings"><path d="M119 112h28v28h-28zM161 112h38v16h-38zM116 152h75v31h-75zM280 112h42v60h-42zM336 111h43v24h-43zM338 147h41v34h-41zM459 108h70v32h-70zM458 154h36v26h-36zM506 155h24v26h-24zM120 258h37v67h-37zM168 257h33v34h-33zM279 258h96v26h-96zM279 300h42v22h-42zM337 299h39v24h-39zM461 257h66v58h-66zM121 405h80v28h-80zM120 447h35v27h-35zM279 406h36v59h-36zM330 405h44v38h-44zM458 402h72v26h-72zM458 441h35v27h-35z"/></g>
+              <path class="route-shadow" d="M28 443L82 394 244 371 300 314 422 225 574 170 630 116"/>
+              <path class="route" d="M28 443L82 394 244 371 300 314 422 225 574 170 630 116"/>
+              <circle class="origin" cx="28" cy="443" r="8"/><circle class="destination" cx="630" cy="116" r="8"/><path class="cross" d="M630 90v52M604 116h52"/>
+            </svg>
+            <span class="map-key">OSM DATA <span aria-hidden="true">→</span> UNITY WORLD</span>
+            <span class="map-marker">A</span><span class="map-marker end">B</span>
+          </div>
+          <div class="plate-foot"><span>{{hero.plateFoot}}</span><span>UNITY · C# · OPENSTREETMAP</span></div>
+        </div>
+      </div>
+      <div class="hero-bottom"><span>RWTH AACHEN / COMPUTER SCIENCE</span><span>{{hero.scroll}} ↓</span></div>
+    </section>
+
+    <section class="orientation section-shell" id="about" aria-labelledby="about-title">
+      <div class="section-index"><span>01 / {{about.label}}</span><i aria-hidden="true"></i></div>
+      <div class="orientation-copy"><h2 id="about-title">{{about.title}}</h2><div class="orientation-details"><p>{{about.body}}</p><div class="interest-note"><span>{{about.interestLabel}}</span><p>{{about.interests}}</p></div></div></div>
+    </section>
+
+    <section class="work section-shell" id="work" aria-labelledby="work-title">
+      <div class="section-index"><span>02 / {{work.label}}</span><i aria-hidden="true"></i></div>
+      <div class="section-intro"><h2 id="work-title">{{work.title}}</h2><p>{{work.intro}}</p></div>
+      <article class="project project-lead">
+        <div class="project-rail"><span>01 / {{work.one.category}}</span><span>06.2025 — {{time.present}}</span></div>
+        <div class="project-content"><p class="project-org">{{work.one.org}}</p><h3>{{work.one.title}}</h3><p class="project-summary">{{work.one.summary}}</p><div class="project-split"><div><span class="sub-index">A / FIZZY-BALL</span><h4>{{work.one.fizzyTitle}}</h4><p>{{work.one.fizzy}}</p></div><div><span class="sub-index">B / BICYCLE SIMULATION</span><h4>{{work.one.bicycleTitle}}</h4><p>{{work.one.bicycle}}</p></div></div><p class="project-footnote">{{work.one.school}}</p></div>
+      </article>
+      <article class="project">
+        <div class="project-rail"><span>02 / {{work.two.category}}</span><span>11.2024 — {{time.present}}</span></div>
+        <div class="project-content"><p class="project-org">{{work.two.org}}</p><h3>{{work.two.title}}</h3><p class="project-summary">{{work.two.summary}}</p></div>
+      </article>
+      <article class="project">
+        <div class="project-rail"><span>03 / {{work.three.category}}</span><span>2023 — 2024</span></div>
+        <div class="project-content"><p class="project-org">{{work.three.org}}</p><h3>{{work.three.title}}</h3><p class="project-summary">{{work.three.summary}}</p></div>
+      </article>
+    </section>
+
+    <section class="study section-shell" id="study" aria-labelledby="study-title">
+      <div class="section-index"><span>03 / {{study.label}}</span><i aria-hidden="true"></i></div>
+      <div class="section-intro"><h2 id="study-title">{{study.title}}</h2><p>{{study.intro}}</p></div>
+      <div class="study-layout"><div class="study-primary"><span class="study-date">04.2024 — {{study.expected}} 08.2027</span><h3>RWTH Aachen University</h3><p>{{study.degree}}</p><p>{{study.focus}}</p><div class="study-metrics"><div><strong>2.0</strong><span>{{study.gpa}}</span></div><div><strong>127 / 180</strong><span>{{study.credits}}</span></div></div><small>{{study.asOf}}</small></div><div class="study-secondary"><span class="study-date">08.2020 — 07.2023</span><h3>Phu Nhuan High School</h3><p>{{study.highschool}}</p><p>{{study.highschoolGrade}}</p></div></div>
+      <div class="coursework"><div class="coursework-head"><h3>{{study.coursework}}</h3><span>{{study.selection}}</span></div><ul><li>Elements of Machine Learning and Data Science</li><li>Data Structures and Algorithms</li><li>Operating Systems and System Software</li><li>Artificial Intelligence in Music Data Analysis</li><li>Fundamentals of Automatic Speech Recognition</li><li>Foundations of Functional Programming</li></ul></div>
+    </section>
+
+    <section class="practice section-shell" id="practice" aria-labelledby="practice-title"><div class="section-index"><span>04 / {{practice.label}}</span><i aria-hidden="true"></i></div><div class="section-intro"><h2 id="practice-title">{{practice.title}}</h2><p>{{practice.intro}}</p></div><div class="practice-table"><div><span class="practice-num">01</span><h3>{{practice.systems}}</h3><p>{{practice.systemsBody}}</p></div><div><span class="practice-num">02</span><h3>{{practice.ml}}</h3><p>{{practice.mlBody}}</p></div><div><span class="practice-num">03</span><h3>{{practice.prototyping}}</h3><p>{{practice.prototypingBody}}</p></div></div></section>
+
+    <section class="recognition section-shell" aria-labelledby="recognition-title"><div class="section-index"><span>05 / {{recognition.label}}</span><i aria-hidden="true"></i></div><div class="recognition-layout"><div><h2 id="recognition-title">{{recognition.title}}</h2><ol class="award-list"><li><span>2026</span><div><strong>Dean’s List</strong><small>RWTH Aachen University</small></div></li><li><span>2023</span><div><strong>Tin Hoc Tre Coding Competition</strong><small>{{recognition.second}}</small></div></li><li><span>2023</span><div><strong>{{recognition.gifted}}</strong><small>{{recognition.third}}</small></div></li></ol></div><div class="spoken"><h3>{{recognition.languages}}</h3><dl><div><dt>VI</dt><dd>{{recognition.vietnamese}}</dd></div><div><dt>EN</dt><dd>{{recognition.english}}</dd></div><div><dt>DE</dt><dd>{{recognition.german}}</dd></div></dl></div></div></section>
+
+    <section class="contact section-shell" id="contact" aria-labelledby="contact-title"><div class="section-index"><span>06 / {{contact.label}}</span><i aria-hidden="true"></i></div><div class="contact-layout"><h2 id="contact-title">{{contact.titleA}}<br><em>{{contact.titleB}}</em></h2><div><p>{{contact.body}}</p><a class="contact-email" href="mailto:trong.phat.vo@rwth-aachen.de">trong.phat.vo@rwth-aachen.de <span aria-hidden="true">↗</span></a><a class="contact-github" href="https://github.com/peteVo" target="_blank" rel="noopener noreferrer">GITHUB / PETEVO ↗</a><span class="contact-place">AACHEN, GERMANY</span></div></div></section>
+  </main>
+
+  <footer class="footer section-shell"><span>© <span data-year>2026</span> TRONG PHAT VO</span><span>{{footer.note}}</span><a href="#top">{{footer.top}} ↑</a></footer>
+</body>
+</html>
