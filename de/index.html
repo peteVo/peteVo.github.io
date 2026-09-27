@@ -30,7 +30,8 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
-  <header class="header" id="top">
+  <div id="top" aria-hidden="true"></div>
+  <header class="header">
     <div class="header-inner">
       <a class="brand" href="#top" aria-label="Trong Phat Vo"><span class="brand-mark">TPV<span>.</span></span><span class="brand-name">TRONG PHAT VO</span></a>
       <nav class="desktop-nav" aria-label="Hauptnavigation">
@@ -38,8 +39,8 @@
       </nav>
       <div class="header-controls">
         <label class="language-select"><span class="sr-only">Sprache</span><select data-language aria-label="Sprache"><option value="en" >EN</option><option value="de" selected>DE</option><option value="vi" >VI</option></select></label>
-        <button class="icon-control theme-control" type="button" data-theme-toggle data-to-dark="Zum dunklen Modus wechseln" data-to-light="Zum hellen Modus wechseln" aria-label="Zum dunklen Modus wechseln"><span aria-hidden="true">◐</span></button>
-        <button class="print-control" type="button" data-print aria-label="Lebenslauf drucken">Lebenslauf drucken</button>
+        <button class="icon-control theme-control" type="button" data-theme-toggle data-to-dark="Zum dunklen Modus wechseln" data-to-light="Zum hellen Modus wechseln" aria-label="Zum dunklen Modus wechseln"><svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.2A8.5 8.5 0 0 1 9.8 4 8.5 8.5 0 1 0 20 14.2Z"/></svg><svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4m0-14.2-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></button>
+        <button class="print-control" type="button" data-print aria-label="Lebenslauf drucken"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 15h12v6H6zM18 12h1"/></svg><span>Lebenslauf drucken</span></button>
         <button class="menu-control" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Menü öffnen" data-open-label="Menü öffnen" data-close-label="Menü schließen"><span></span><span></span></button>
       </div>
     </div>
@@ -60,7 +61,7 @@
           </div>
         </div>
         <div class="plate">
-          <div class="plate-head"><span>FELDSTUDIE 01 / STADTMODELL</span><span>SCHEMATISCH</span></div>
+          <div class="plate-head"><span>PROJEKTSKIZZE 01 / STADTMODELL</span><span>ILLUSTRATION</span></div>
           <div class="map" role="img" aria-label="Schematisches Stadtmodell mit Straßennetz, Gebäudeblöcken und einer Route; eine Illustration der Bicycle Simulation, kein Projektscreenshot">
             <svg viewBox="0 0 660 520" aria-hidden="true" focusable="false">
               <defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".8" fill="currentColor"/></pattern></defs>
@@ -72,26 +73,26 @@
               <path class="route" d="M28 443L82 394 244 371 300 314 422 225 574 170 630 116"/>
               <circle class="origin" cx="28" cy="443" r="8"/><circle class="destination" cx="630" cy="116" r="8"/><path class="cross" d="M630 90v52M604 116h52"/>
             </svg>
-            <span class="map-key">OSM DATA <span aria-hidden="true">→</span> UNITY WORLD</span>
+            <span class="map-key">OSM-DATEN <span aria-hidden="true">→</span> UNITY-WELT</span>
             <span class="map-marker">A</span><span class="map-marker end">B</span>
           </div>
           <div class="plate-foot"><span>01 / BICYCLE SIMULATION</span><span>UNITY · C# · OPENSTREETMAP</span></div>
         </div>
       </div>
-      <div class="hero-bottom"><span>RWTH AACHEN / COMPUTER SCIENCE</span><span>WEITER ZUR ARBEIT ↓</span></div>
+      <div class="hero-bottom"><span>RWTH AACHEN / INFORMATIK</span><span>WEITER ZUR ERFAHRUNG ↓</span></div>
     </section>
 
     <section class="orientation section-shell" id="about" aria-labelledby="about-title">
       <div class="section-index"><span>01 / PERSPEKTIVE</span><i aria-hidden="true"></i></div>
-      <div class="orientation-copy"><h2 id="about-title">Von Hardware-Registern zu konstruierten Welten.</h2><div class="orientation-details"><p>Meine Arbeit bewegt sich zwischen den kleinen Mechanismen der Software und den Umgebungen, in denen Systeme handeln müssen. An der RWTH Aachen entwickle ich Simulationen; im Studium beschäftige ich mich mit maschinellem Lernen und Algorithmen; in C und C++ arbeite ich nah an der Hardware.</p><div class="interest-note"><span>INTERESSENGEBIETE</span><p>Reinforcement Learning · Robotik · technische Experimente</p></div></div></div>
+      <div class="orientation-copy"><h2 id="about-title">Von LED-Matrizen zu Stadtmodellen.</h2><div class="orientation-details"><p>Ich habe AVR-Mikrocontroller in C für LED-Matrizen programmiert und entwickle heute an der RWTH Aachen 3D-Simulationen mit Unity und C#. Im Studium beschäftige ich mich mit Algorithmen und maschinellem Lernen.</p><div class="interest-note"><span>INTERESSENGEBIETE</span><p>Reinforcement Learning · Robotik · technische Experimente</p></div></div></div>
     </section>
 
     <section class="work section-shell" id="work" aria-labelledby="work-title">
       <div class="section-index"><span>02 / ERFAHRUNG</span><i aria-hidden="true"></i></div>
-      <div class="section-intro"><h2 id="work-title">Simulieren. Bewerten. Erklären.</h2><p>Simulation, Bewertung und Lehre – drei Wege, Ideen durch Praxis verständlicher zu machen.</p></div>
+      <div class="section-intro"><h2 id="work-title">Arbeit und Erfahrung.</h2><p>An der RWTH Aachen entwickle ich Forschungssimulationen. Für BWINF bewerte ich Einsendungen der ersten Runde; zuvor gab ich Deutsch-Nachhilfe in Ho-Chi-Minh-Stadt.</p></div>
       <article class="project project-lead">
         <div class="project-rail"><span>01 / STUDENTISCHE HILFSKRAFT</span><span>06.2025 — HEUTE</span></div>
-        <div class="project-content"><p class="project-org">Institut für Regelungstechnik · RWTH Aachen</p><h3>Eine Stadt ausführbar machen.</h3><p class="project-summary">Ich entwickle 3D-Simulationsumgebungen und Werkzeuge für Forschungsprojekte mit Unity und C#.</p><div class="project-split"><div><span class="sub-index">A / FIZZY-BALL</span><h4>3D-Simulationsumgebungen</h4><p>Entwicklung von Umgebungen für das Projekt Fizzy-Ball.</p></div><div><span class="sub-index">B / BICYCLE SIMULATION</span><h4>OSM-Weltgenerierung</h4><p>Entwicklung eines OpenStreetMap-Weltgenerierungstools und Integration von OSM-Datensätzen zur automatisierten Erstellung realistischer Stadtmodelle für Bicycle Simulation.</p></div></div><p class="project-footnote">Außerdem Organisation der Fizzy Summer School 2025.</p></div>
+        <div class="project-content"><p class="project-org">Institut für Regelungstechnik · RWTH Aachen</p><h3>Forschungsumgebungen mit Unity.</h3><p class="project-summary">Ich entwickle 3D-Simulationsumgebungen und Werkzeuge für Forschungsprojekte mit Unity und C#.</p><div class="project-split"><div><span class="sub-index">A / 3D-SIMULATION</span><h4>Fizzy-Ball</h4><p>Entwicklung von Umgebungen für das Projekt Fizzy-Ball.</p></div><div><span class="sub-index">B / OSM-WELTGENERIERUNG</span><h4>Bicycle Simulation</h4><p>Entwicklung eines OpenStreetMap-Weltgenerierungstools und Integration von OSM-Datensätzen zur automatisierten Erstellung realistischer Stadtmodelle für Bicycle Simulation.</p></div></div><p class="project-footnote">Außerdem Organisation der Fizzy Summer School 2025.</p></div>
       </article>
       <article class="project">
         <div class="project-rail"><span>02 / BEWERTER</span><span>11.2024 — HEUTE</span></div>
@@ -105,18 +106,18 @@
 
     <section class="study section-shell" id="study" aria-labelledby="study-title">
       <div class="section-index"><span>03 / BILDUNGSWEG</span><i aria-hidden="true"></i></div>
-      <div class="section-intro"><h2 id="study-title">Ein Fundament im Aufbau.</h2><p>Informatik an der RWTH Aachen mit Schwerpunkten in maschinellem Lernen und Algorithmen.</p></div>
+      <div class="section-intro"><h2 id="study-title">Ausbildung und Studienfächer.</h2><p>Informatik an der RWTH Aachen mit Schwerpunkten in maschinellem Lernen und Algorithmen.</p></div>
       <div class="study-layout"><div class="study-primary"><span class="study-date">04.2024 — VORAUSSICHTLICH 08.2027</span><h3>RWTH Aachen University</h3><p>Bachelor of Science in Informatik · Aachen, Deutschland</p><p>Schwerpunkte: Maschinelles Lernen und Algorithmen. Dean’s List 2026.</p><div class="study-metrics"><div><strong>2.0</strong><span>AKTUELLER NOTENDURCHSCHNITT</span></div><div><strong>127 / 180</strong><span>ERREICHTE CREDITS</span></div></div><small>Notenspiegel vom 19. September 2026.</small></div><div class="study-secondary"><span class="study-date">08.2020 — 07.2023</span><h3>Phu Nhuan High School</h3><p>Schulabschluss · Ho-Chi-Minh-Stadt, Vietnam</p><p>Abschlussnote: sehr gut.</p></div></div>
       <div class="coursework"><div class="coursework-head"><h3>Ausgewählte Module</h3><span>AUS DEM RWTH-NOTENSPIEGEL</span></div><ul><li>Elements of Machine Learning and Data Science</li><li>Data Structures and Algorithms</li><li>Operating Systems and System Software</li><li>Artificial Intelligence in Music Data Analysis</li><li>Fundamentals of Automatic Speech Recognition</li><li>Foundations of Functional Programming</li></ul></div>
     </section>
 
-    <section class="practice section-shell" id="practice" aria-labelledby="practice-title"><div class="section-index"><span>04 / TECHNISCHE PRAXIS</span><i aria-hidden="true"></i></div><div class="section-intro"><h2 id="practice-title">Werkzeuge im Einsatz.</h2><p>Die Sprachen und Werkzeuge stammen aus dem Lebenslauf und der praktischen Arbeit und sind nach ihrer Anwendung gruppiert.</p></div><div class="practice-table"><div><span class="practice-num">01</span><h3>Systeme &amp; Software</h3><p>Modernes C++ (Templates, Compile-Time Evaluation); hardwarenahes C mit AVR-Mikrocontrollern, Registern, Timern und Interrupt-Service-Routinen für LED-Matrizen; Java; HTML, CSS, JavaScript und React.</p></div><div><span class="practice-num">02</span><h3>Lernen &amp; Daten</h3><p>Python und PyTorch für Machine-Learning-Pipelines, darunter Character-Level Language Models und Extraktion klinischer Daten; lokale Qwen- und DeepSeek-Deployments; DeepLearning.AI-Kurse auf Coursera.</p></div><div><span class="practice-num">03</span><h3>Simulation &amp; Workflow</h3><p>Unity und C# für 3D-Simulation, OpenStreetMap-Datensätze zur Stadtgenerierung sowie Git und LaTeX.</p></div></div></section>
+    <section class="practice section-shell" id="practice" aria-labelledby="practice-title"><div class="section-index"><span>04 / TECHNISCHE PRAXIS</span><i aria-hidden="true"></i></div><div class="section-intro"><h2 id="practice-title">Werkzeuge im Einsatz.</h2><p>C und AVR für Hardware; Python und PyTorch für maschinelles Lernen; Unity und C# für Simulationen.</p></div><div class="practice-table"><div><span class="practice-num">01</span><h3>Systeme &amp; Software</h3><p>Modernes C++ (Templates, Compile-Time Evaluation); hardwarenahes C mit AVR-Mikrocontrollern, Registern, Timern und Interrupt-Service-Routinen für LED-Matrizen; Java; HTML, CSS, JavaScript und React.</p></div><div><span class="practice-num">02</span><h3>Lernen &amp; Daten</h3><p>Python und PyTorch für Machine-Learning-Pipelines, darunter Character-Level Language Models und Extraktion klinischer Daten; lokale Qwen- und DeepSeek-Deployments; DeepLearning.AI-Kurse auf Coursera.</p></div><div><span class="practice-num">03</span><h3>Simulation &amp; Workflow</h3><p>Unity und C# für 3D-Simulation, OpenStreetMap-Datensätze zur Stadtgenerierung sowie Git und LaTeX.</p></div></div></section>
 
     <section class="recognition section-shell" aria-labelledby="recognition-title"><div class="section-index"><span>05 / AUSZEICHNUNGEN</span><i aria-hidden="true"></i></div><div class="recognition-layout"><div><h2 id="recognition-title">Preise &amp; Sprachen.</h2><ol class="award-list"><li><span>2026</span><div><strong>Dean’s List</strong><small>RWTH Aachen University</small></div></li><li><span>2023</span><div><strong>Tin Hoc Tre Coding Competition</strong><small>2. Platz</small></div></li><li><span>2023</span><div><strong>Informatikwettbewerb für begabte Schüler</strong><small>3. Preis</small></div></li></ol></div><div class="spoken"><h3>Sprachen</h3><dl><div><dt>VI</dt><dd>Muttersprache</dd></div><div><dt>EN</dt><dd>Fließend · IELTS 8.0</dd></div><div><dt>DE</dt><dd>Gute Kenntnisse · TestDaF 19</dd></div></dl></div></div></section>
 
-    <section class="contact section-shell" id="contact" aria-labelledby="contact-title"><div class="section-index"><span>06 / KONTAKT</span><i aria-hidden="true"></i></div><div class="contact-layout"><h2 id="contact-title">Vergleichen wir<br><em>unsere Notizen.</em></h2><div><p>Ich freue mich über Gespräche zu Simulation, maschinellem Lernen, Softwareentwicklung und Forschung.</p><a class="contact-email" href="mailto:trong.phat.vo@rwth-aachen.de">trong.phat.vo@rwth-aachen.de <span aria-hidden="true">↗</span></a><a class="contact-github" href="https://github.com/peteVo" target="_blank" rel="noopener noreferrer">GITHUB / PETEVO ↗</a><span class="contact-place">AACHEN, GERMANY</span></div></div></section>
+    <section class="contact section-shell" id="contact" aria-labelledby="contact-title"><div class="section-index"><span>06 / KONTAKT</span><i aria-hidden="true"></i></div><div class="contact-layout"><h2 id="contact-title">Schreiben<br><em>Sie mir.</em></h2><div><p>Ich freue mich über Gespräche zu Simulation, maschinellem Lernen, Softwareentwicklung und Forschung.</p><a class="contact-email" href="mailto:trong.phat.vo@rwth-aachen.de">trong.phat.vo@rwth-aachen.de <span aria-hidden="true">↗</span></a><a class="contact-github" href="https://github.com/peteVo" target="_blank" rel="noopener noreferrer">GITHUB / PETEVO ↗</a><span class="contact-place">AACHEN, DEUTSCHLAND</span></div></div></section>
   </main>
 
-  <footer class="footer section-shell"><span>© <span data-year>2026</span> TRONG PHAT VO</span><span>Ein Portfolio laufender Arbeit.</span><a href="#top">NACH OBEN ↑</a></footer>
+  <footer class="footer section-shell"><span>© <span data-year>2026</span> TRONG PHAT VO</span><span>Informatik / RWTH Aachen.</span><a href="#top">NACH OBEN ↑</a></footer>
 </body>
 </html>

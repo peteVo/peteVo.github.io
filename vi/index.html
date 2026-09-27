@@ -30,7 +30,8 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Đến nội dung</a>
-  <header class="header" id="top">
+  <div id="top" aria-hidden="true"></div>
+  <header class="header">
     <div class="header-inner">
       <a class="brand" href="#top" aria-label="Trong Phat Vo"><span class="brand-mark">TPV<span>.</span></span><span class="brand-name">TRONG PHAT VO</span></a>
       <nav class="desktop-nav" aria-label="Điều hướng chính">
@@ -38,8 +39,8 @@
       </nav>
       <div class="header-controls">
         <label class="language-select"><span class="sr-only">Ngôn ngữ</span><select data-language aria-label="Ngôn ngữ"><option value="en" >EN</option><option value="de" >DE</option><option value="vi" selected>VI</option></select></label>
-        <button class="icon-control theme-control" type="button" data-theme-toggle data-to-dark="Chuyển sang chế độ tối" data-to-light="Chuyển sang chế độ sáng" aria-label="Chuyển sang chế độ tối"><span aria-hidden="true">◐</span></button>
-        <button class="print-control" type="button" data-print aria-label="In CV">In CV</button>
+        <button class="icon-control theme-control" type="button" data-theme-toggle data-to-dark="Chuyển sang chế độ tối" data-to-light="Chuyển sang chế độ sáng" aria-label="Chuyển sang chế độ tối"><svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.2A8.5 8.5 0 0 1 9.8 4 8.5 8.5 0 1 0 20 14.2Z"/></svg><svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4m0-14.2-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></button>
+        <button class="print-control" type="button" data-print aria-label="In CV"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 15h12v6H6zM18 12h1"/></svg><span>In CV</span></button>
         <button class="menu-control" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Mở menu" data-open-label="Mở menu" data-close-label="Đóng menu"><span></span><span></span></button>
       </div>
     </div>
@@ -60,7 +61,7 @@
           </div>
         </div>
         <div class="plate">
-          <div class="plate-head"><span>NGHIÊN CỨU 01 / MÔ HÌNH THÀNH PHỐ</span><span>SƠ ĐỒ</span></div>
+          <div class="plate-head"><span>SƠ ĐỒ DỰ ÁN 01 / MÔ HÌNH THÀNH PHỐ</span><span>MINH HỌA</span></div>
           <div class="map" role="img" aria-label="Sơ đồ thành phố với đường phố, các khối nhà và một tuyến đường; minh họa cho công việc Bicycle Simulation, không phải ảnh chụp dự án">
             <svg viewBox="0 0 660 520" aria-hidden="true" focusable="false">
               <defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".8" fill="currentColor"/></pattern></defs>
@@ -72,26 +73,26 @@
               <path class="route" d="M28 443L82 394 244 371 300 314 422 225 574 170 630 116"/>
               <circle class="origin" cx="28" cy="443" r="8"/><circle class="destination" cx="630" cy="116" r="8"/><path class="cross" d="M630 90v52M604 116h52"/>
             </svg>
-            <span class="map-key">OSM DATA <span aria-hidden="true">→</span> UNITY WORLD</span>
+            <span class="map-key">DỮ LIỆU OSM <span aria-hidden="true">→</span> THẾ GIỚI UNITY</span>
             <span class="map-marker">A</span><span class="map-marker end">B</span>
           </div>
           <div class="plate-foot"><span>01 / BICYCLE SIMULATION</span><span>UNITY · C# · OPENSTREETMAP</span></div>
         </div>
       </div>
-      <div class="hero-bottom"><span>RWTH AACHEN / COMPUTER SCIENCE</span><span>CUỘN ĐỂ XEM CÔNG VIỆC ↓</span></div>
+      <div class="hero-bottom"><span>RWTH AACHEN / KHOA HỌC MÁY TÍNH</span><span>TIẾP ĐẾN KINH NGHIỆM ↓</span></div>
     </section>
 
     <section class="orientation section-shell" id="about" aria-labelledby="about-title">
       <div class="section-index"><span>01 / GÓC NHÌN</span><i aria-hidden="true"></i></div>
-      <div class="orientation-copy"><h2 id="about-title">Từ thanh ghi phần cứng đến thế giới mô phỏng.</h2><div class="orientation-details"><p>Công việc của tôi trải từ cơ chế nhỏ của phần mềm đến môi trường nơi hệ thống phải hoạt động. Tại RWTH Aachen, tôi xây dựng mô phỏng; trong chương trình học, tôi tập trung vào học máy và thuật toán; với C và C++, tôi làm việc gần phần cứng.</p><div class="interest-note"><span>HƯỚNG QUAN TÂM</span><p>Học tăng cường · robot học · thử nghiệm kỹ thuật</p></div></div></div>
+      <div class="orientation-copy"><h2 id="about-title">Từ ma trận LED đến mô hình thành phố.</h2><div class="orientation-details"><p>Tôi từng lập trình vi điều khiển AVR bằng C cho ma trận LED và hiện xây dựng mô phỏng 3D bằng Unity và C# tại RWTH Aachen. Trong chương trình học, tôi tập trung vào thuật toán và học máy.</p><div class="interest-note"><span>HƯỚNG QUAN TÂM</span><p>Học tăng cường · robot học · thử nghiệm kỹ thuật</p></div></div></div>
     </section>
 
     <section class="work section-shell" id="work" aria-labelledby="work-title">
       <div class="section-index"><span>02 / KINH NGHIỆM</span><i aria-hidden="true"></i></div>
-      <div class="section-intro"><h2 id="work-title">Mô phỏng. Đánh giá. Giải thích.</h2><p>Mô phỏng, đánh giá và giảng dạy — ba cách làm ý tưởng rõ ràng hơn qua thực hành.</p></div>
+      <div class="section-intro"><h2 id="work-title">Công việc và kinh nghiệm.</h2><p>Tại RWTH Aachen, tôi xây dựng mô phỏng cho nghiên cứu. Với BWINF, tôi chấm bài vòng đầu; trước đó, tôi dạy kèm tiếng Đức tại Thành phố Hồ Chí Minh.</p></div>
       <article class="project project-lead">
         <div class="project-rail"><span>01 / TRỢ LÝ NGHIÊN CỨU</span><span>06.2025 — HIỆN NAY</span></div>
-        <div class="project-content"><p class="project-org">Viện Điều khiển tự động · RWTH Aachen</p><h3>Biến thành phố thành môi trường mô phỏng.</h3><p class="project-summary">Tôi phát triển môi trường mô phỏng 3D và công cụ cho các dự án nghiên cứu bằng Unity và C#.</p><div class="project-split"><div><span class="sub-index">A / FIZZY-BALL</span><h4>Môi trường mô phỏng 3D</h4><p>Phát triển môi trường cho dự án Fizzy-Ball.</p></div><div><span class="sub-index">B / BICYCLE SIMULATION</span><h4>Tạo thế giới từ OSM</h4><p>Phát triển công cụ tạo thế giới từ OpenStreetMap và tích hợp dữ liệu OSM để tự động tạo mô hình thành phố thực tế cho dự án Bicycle Simulation.</p></div></div><p class="project-footnote">Đồng thời tổ chức Fizzy Summer School 2025.</p></div>
+        <div class="project-content"><p class="project-org">Viện Điều khiển tự động · RWTH Aachen</p><h3>Môi trường nghiên cứu với Unity.</h3><p class="project-summary">Tôi phát triển môi trường mô phỏng 3D và công cụ cho các dự án nghiên cứu bằng Unity và C#.</p><div class="project-split"><div><span class="sub-index">A / MÔ PHỎNG 3D</span><h4>Fizzy-Ball</h4><p>Phát triển môi trường cho dự án Fizzy-Ball.</p></div><div><span class="sub-index">B / TẠO THẾ GIỚI TỪ OSM</span><h4>Bicycle Simulation</h4><p>Phát triển công cụ tạo thế giới từ OpenStreetMap và tích hợp dữ liệu OSM để tự động tạo mô hình thành phố thực tế cho dự án Bicycle Simulation.</p></div></div><p class="project-footnote">Đồng thời tổ chức Fizzy Summer School 2025.</p></div>
       </article>
       <article class="project">
         <div class="project-rail"><span>02 / NGƯỜI CHẤM THI</span><span>11.2024 — HIỆN NAY</span></div>
@@ -105,18 +106,18 @@
 
     <section class="study section-shell" id="study" aria-labelledby="study-title">
       <div class="section-index"><span>03 / HỌC VẤN</span><i aria-hidden="true"></i></div>
-      <div class="section-intro"><h2 id="study-title">Nền tảng đang được xây dựng.</h2><p>Khoa học máy tính tại RWTH Aachen, tập trung vào học máy và thuật toán.</p></div>
+      <div class="section-intro"><h2 id="study-title">Học vấn và môn học.</h2><p>Khoa học máy tính tại RWTH Aachen, tập trung vào học máy và thuật toán.</p></div>
       <div class="study-layout"><div class="study-primary"><span class="study-date">04.2024 — DỰ KIẾN 08.2027</span><h3>RWTH Aachen University</h3><p>Cử nhân Khoa học máy tính · Aachen, Đức</p><p>Trọng tâm: Học máy và Thuật toán. Dean’s List 2026.</p><div class="study-metrics"><div><strong>2.0</strong><span>ĐIỂM TRUNG BÌNH HIỆN TẠI</span></div><div><strong>127 / 180</strong><span>TÍN CHỈ ĐÃ ĐẠT</span></div></div><small>Bảng điểm ngày 19 tháng 9 năm 2026.</small></div><div class="study-secondary"><span class="study-date">08.2020 — 07.2023</span><h3>Phu Nhuan High School</h3><p>Bằng tốt nghiệp trung học · Thành phố Hồ Chí Minh, Việt Nam</p><p>Xếp loại tốt nghiệp: Rất tốt.</p></div></div>
       <div class="coursework"><div class="coursework-head"><h3>Môn học tiêu biểu</h3><span>TỪ BẢNG ĐIỂM RWTH</span></div><ul><li>Elements of Machine Learning and Data Science</li><li>Data Structures and Algorithms</li><li>Operating Systems and System Software</li><li>Artificial Intelligence in Music Data Analysis</li><li>Fundamentals of Automatic Speech Recognition</li><li>Foundations of Functional Programming</li></ul></div>
     </section>
 
-    <section class="practice section-shell" id="practice" aria-labelledby="practice-title"><div class="section-index"><span>04 / THỰC HÀNH KỸ THUẬT</span><i aria-hidden="true"></i></div><div class="section-intro"><h2 id="practice-title">Bộ công cụ thực hành.</h2><p>Các ngôn ngữ và công cụ dưới đây đến từ CV và công việc thực tế, được nhóm theo loại vấn đề chúng giúp giải quyết.</p></div><div class="practice-table"><div><span class="practice-num">01</span><h3>Hệ thống &amp; phần mềm</h3><p>C++ hiện đại (template, tính toán tại thời điểm biên dịch); C gần phần cứng với vi điều khiển AVR, thanh ghi, bộ định thời và chương trình phục vụ ngắt cho ma trận LED; Java; HTML, CSS, JavaScript và React.</p></div><div><span class="practice-num">02</span><h3>Học máy &amp; dữ liệu</h3><p>Python và PyTorch cho pipeline học máy, gồm mô hình ngôn ngữ mức ký tự và trích xuất dữ liệu lâm sàng; triển khai Qwen và DeepSeek cục bộ; các khóa học DeepLearning.AI trên Coursera.</p></div><div><span class="practice-num">03</span><h3>Mô phỏng &amp; quy trình</h3><p>Unity và C# cho mô phỏng 3D, dữ liệu OpenStreetMap để tạo mô hình thành phố, cùng Git và LaTeX.</p></div></div></section>
+    <section class="practice section-shell" id="practice" aria-labelledby="practice-title"><div class="section-index"><span>04 / THỰC HÀNH KỸ THUẬT</span><i aria-hidden="true"></i></div><div class="section-intro"><h2 id="practice-title">Công cụ đang sử dụng.</h2><p>C và AVR cho phần cứng; Python và PyTorch cho học máy; Unity và C# cho mô phỏng.</p></div><div class="practice-table"><div><span class="practice-num">01</span><h3>Hệ thống &amp; phần mềm</h3><p>C++ hiện đại (template, tính toán tại thời điểm biên dịch); C gần phần cứng với vi điều khiển AVR, thanh ghi, bộ định thời và chương trình phục vụ ngắt cho ma trận LED; Java; HTML, CSS, JavaScript và React.</p></div><div><span class="practice-num">02</span><h3>Học máy &amp; dữ liệu</h3><p>Python và PyTorch cho pipeline học máy, gồm mô hình ngôn ngữ mức ký tự và trích xuất dữ liệu lâm sàng; triển khai Qwen và DeepSeek cục bộ; các khóa học DeepLearning.AI trên Coursera.</p></div><div><span class="practice-num">03</span><h3>Mô phỏng &amp; quy trình</h3><p>Unity và C# cho mô phỏng 3D, dữ liệu OpenStreetMap để tạo mô hình thành phố, cùng Git và LaTeX.</p></div></div></section>
 
     <section class="recognition section-shell" aria-labelledby="recognition-title"><div class="section-index"><span>05 / THÀNH TÍCH</span><i aria-hidden="true"></i></div><div class="recognition-layout"><div><h2 id="recognition-title">Giải thưởng &amp; ngôn ngữ.</h2><ol class="award-list"><li><span>2026</span><div><strong>Dean’s List</strong><small>RWTH Aachen University</small></div></li><li><span>2023</span><div><strong>Tin Hoc Tre Coding Competition</strong><small>Giải nhì</small></div></li><li><span>2023</span><div><strong>Cuộc thi Tin học dành cho học sinh giỏi</strong><small>Giải ba</small></div></li></ol></div><div class="spoken"><h3>Ngôn ngữ</h3><dl><div><dt>VI</dt><dd>Bản ngữ</dd></div><div><dt>EN</dt><dd>Thành thạo · IELTS 8.0</dd></div><div><dt>DE</dt><dd>Khá · TestDaF 19</dd></div></dl></div></div></section>
 
-    <section class="contact section-shell" id="contact" aria-labelledby="contact-title"><div class="section-index"><span>06 / LIÊN HỆ</span><i aria-hidden="true"></i></div><div class="contact-layout"><h2 id="contact-title">Cùng trao đổi<br><em>những ghi chú.</em></h2><div><p>Tôi sẵn sàng trò chuyện về mô phỏng, học máy, kỹ thuật phần mềm và nghiên cứu.</p><a class="contact-email" href="mailto:trong.phat.vo@rwth-aachen.de">trong.phat.vo@rwth-aachen.de <span aria-hidden="true">↗</span></a><a class="contact-github" href="https://github.com/peteVo" target="_blank" rel="noopener noreferrer">GITHUB / PETEVO ↗</a><span class="contact-place">AACHEN, GERMANY</span></div></div></section>
+    <section class="contact section-shell" id="contact" aria-labelledby="contact-title"><div class="section-index"><span>06 / LIÊN HỆ</span><i aria-hidden="true"></i></div><div class="contact-layout"><h2 id="contact-title">Liên hệ<br><em>với tôi.</em></h2><div><p>Tôi sẵn sàng trò chuyện về mô phỏng, học máy, kỹ thuật phần mềm và nghiên cứu.</p><a class="contact-email" href="mailto:trong.phat.vo@rwth-aachen.de">trong.phat.vo@rwth-aachen.de <span aria-hidden="true">↗</span></a><a class="contact-github" href="https://github.com/peteVo" target="_blank" rel="noopener noreferrer">GITHUB / PETEVO ↗</a><span class="contact-place">AACHEN, ĐỨC</span></div></div></section>
   </main>
 
-  <footer class="footer section-shell"><span>© <span data-year>2026</span> TRONG PHAT VO</span><span>Portfolio của những công việc đang tiếp diễn.</span><a href="#top">VỀ ĐẦU TRANG ↑</a></footer>
+  <footer class="footer section-shell"><span>© <span data-year>2026</span> TRONG PHAT VO</span><span>Khoa học máy tính / RWTH Aachen.</span><a href="#top">VỀ ĐẦU TRANG ↑</a></footer>
 </body>
 </html>

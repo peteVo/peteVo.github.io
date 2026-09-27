@@ -21,6 +21,6 @@ Edit copy in `src/translations.json`, markup in `src/template.html`, and styling
 
 The current canonical address is `https://petevo.github.io/`. To use it, publish the website files at the root of a public GitHub Pages repository named `peteVo.github.io` under the matching GitHub account. A static host such as Cloudflare Pages also works. If the final public hostname differs, update the domain in `build.mjs`, `src/template.html`, `robots.txt`, and `sitemap.xml`, regenerate the HTML, and deploy **one** canonical site.
 
-At delivery, `https://petevo.github.io/` still showed a GitHub Pages 404. After publication, verify the public pages and submit `/sitemap.xml` in Google Search Console. Search appearance and timing depend on the search engine; metadata cannot guarantee indexing or ranking.
+After publishing local changes, verify the public pages and submit `/sitemap.xml` in Google Search Console. Search appearance and timing depend on the search engine; metadata cannot guarantee indexing or ranking.
 
 See `DESIGN.md` for art direction and `QA-NOTES.md` for the completed browser and print checks.

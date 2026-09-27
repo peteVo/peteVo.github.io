@@ -30,7 +30,8 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="header" id="top">
+  <div id="top" aria-hidden="true"></div>
+  <header class="header">
     <div class="header-inner">
       <a class="brand" href="#top" aria-label="Trong Phat Vo"><span class="brand-mark">TPV<span>.</span></span><span class="brand-name">TRONG PHAT VO</span></a>
       <nav class="desktop-nav" aria-label="Primary navigation">
@@ -38,8 +39,8 @@
       </nav>
       <div class="header-controls">
         <label class="language-select"><span class="sr-only">Language</span><select data-language aria-label="Language"><option value="en" selected>EN</option><option value="de" >DE</option><option value="vi" >VI</option></select></label>
-        <button class="icon-control theme-control" type="button" data-theme-toggle data-to-dark="Switch to dark mode" data-to-light="Switch to light mode" aria-label="Switch to dark mode"><span aria-hidden="true">◐</span></button>
-        <button class="print-control" type="button" data-print aria-label="Print CV">Print CV</button>
+        <button class="icon-control theme-control" type="button" data-theme-toggle data-to-dark="Switch to dark mode" data-to-light="Switch to light mode" aria-label="Switch to dark mode"><svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.2A8.5 8.5 0 0 1 9.8 4 8.5 8.5 0 1 0 20 14.2Z"/></svg><svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4m0-14.2-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></button>
+        <button class="print-control" type="button" data-print aria-label="Print CV"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 15h12v6H6zM18 12h1"/></svg><span>Print CV</span></button>
         <button class="menu-control" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu" data-open-label="Open menu" data-close-label="Close menu"><span></span><span></span></button>
       </div>
     </div>
@@ -60,7 +61,7 @@
           </div>
         </div>
         <div class="plate">
-          <div class="plate-head"><span>FIELD STUDY 01 / CITY MODEL</span><span>SCHEMATIC</span></div>
+          <div class="plate-head"><span>PROJECT DIAGRAM 01 / CITY MODEL</span><span>ILLUSTRATION</span></div>
           <div class="map" role="img" aria-label="A schematic city model with street geometry, building blocks and a traced route; an illustration of the Bicycle Simulation work, not a project screenshot">
             <svg viewBox="0 0 660 520" aria-hidden="true" focusable="false">
               <defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".8" fill="currentColor"/></pattern></defs>
@@ -78,20 +79,20 @@
           <div class="plate-foot"><span>01 / BICYCLE SIMULATION</span><span>UNITY · C# · OPENSTREETMAP</span></div>
         </div>
       </div>
-      <div class="hero-bottom"><span>RWTH AACHEN / COMPUTER SCIENCE</span><span>SCROLL TO TRACE THE WORK ↓</span></div>
+      <div class="hero-bottom"><span>RWTH AACHEN / COMPUTER SCIENCE</span><span>CONTINUE TO EXPERIENCE ↓</span></div>
     </section>
 
     <section class="orientation section-shell" id="about" aria-labelledby="about-title">
       <div class="section-index"><span>01 / PERSPECTIVE</span><i aria-hidden="true"></i></div>
-      <div class="orientation-copy"><h2 id="about-title">From hardware registers to constructed worlds.</h2><div class="orientation-details"><p>My work moves between the small mechanics of software and the environments in which systems have to act. At RWTH Aachen I build simulations; in coursework I study machine learning and algorithms; in C and C++ I work close to the machine.</p><div class="interest-note"><span>AREAS OF INTEREST</span><p>Reinforcement learning · robotics · technical experimentation</p></div></div></div>
+      <div class="orientation-copy"><h2 id="about-title">From LED matrices to city models.</h2><div class="orientation-details"><p>I have programmed AVR microcontrollers in C for LED matrices and now build 3D simulations at RWTH Aachen with Unity and C#. My coursework spans algorithms and machine learning.</p><div class="interest-note"><span>AREAS OF INTEREST</span><p>Reinforcement learning · robotics · technical experimentation</p></div></div></div>
     </section>
 
     <section class="work section-shell" id="work" aria-labelledby="work-title">
       <div class="section-index"><span>02 / EXPERIENCE</span><i aria-hidden="true"></i></div>
-      <div class="section-intro"><h2 id="work-title">Simulate. Evaluate. Explain.</h2><p>Simulation, evaluation and teaching—three ways of making ideas clearer through practice.</p></div>
+      <div class="section-intro"><h2 id="work-title">Work and experience.</h2><p>At RWTH Aachen I develop research simulations. For BWINF I grade first-round solutions; earlier I tutored German in Ho Chi Minh City.</p></div>
       <article class="project project-lead">
         <div class="project-rail"><span>01 / RESEARCH ASSISTANT</span><span>06.2025 — PRESENT</span></div>
-        <div class="project-content"><p class="project-org">Institute of Automatic Control · RWTH Aachen University</p><h3>Making a city runnable.</h3><p class="project-summary">I develop 3D simulation environments and tools for research projects using Unity and C#.</p><div class="project-split"><div><span class="sub-index">A / FIZZY-BALL</span><h4>3D simulation environments</h4><p>Developed environments for the Fizzy-Ball project.</p></div><div><span class="sub-index">B / BICYCLE SIMULATION</span><h4>OSM world generation</h4><p>Built an OpenStreetMap world-generation tool and integrated OSM datasets to automate realistic city models for the Bicycle Simulation project.</p></div></div><p class="project-footnote">Also organized the Fizzy Summer School 2025.</p></div>
+        <div class="project-content"><p class="project-org">Institute of Automatic Control · RWTH Aachen University</p><h3>Research environments in Unity.</h3><p class="project-summary">I develop 3D simulation environments and tools for research projects using Unity and C#.</p><div class="project-split"><div><span class="sub-index">A / 3D SIMULATION</span><h4>Fizzy-Ball</h4><p>Developed environments for the Fizzy-Ball project.</p></div><div><span class="sub-index">B / OSM WORLD GENERATION</span><h4>Bicycle Simulation</h4><p>Built an OpenStreetMap world-generation tool and integrated OSM datasets to automate realistic city models for the Bicycle Simulation project.</p></div></div><p class="project-footnote">Also organized the Fizzy Summer School 2025.</p></div>
       </article>
       <article class="project">
         <div class="project-rail"><span>02 / GRADER</span><span>11.2024 — PRESENT</span></div>
@@ -105,18 +106,18 @@
 
     <section class="study section-shell" id="study" aria-labelledby="study-title">
       <div class="section-index"><span>03 / EDUCATION</span><i aria-hidden="true"></i></div>
-      <div class="section-intro"><h2 id="study-title">A foundation under construction.</h2><p>Computer Science at RWTH Aachen, with a focus on machine learning and algorithms.</p></div>
+      <div class="section-intro"><h2 id="study-title">Education and coursework.</h2><p>Computer Science at RWTH Aachen, with a focus on machine learning and algorithms.</p></div>
       <div class="study-layout"><div class="study-primary"><span class="study-date">04.2024 — EXPECTED 08.2027</span><h3>RWTH Aachen University</h3><p>Bachelor of Science in Computer Science · Aachen, Germany</p><p>Focus areas: Machine Learning and Algorithms. Dean’s List 2026.</p><div class="study-metrics"><div><strong>2.0</strong><span>CURRENT GRADE / GERMAN SCALE</span></div><div><strong>127 / 180</strong><span>CREDITS EARNED</span></div></div><small>Transcript dated 19 September 2026.</small></div><div class="study-secondary"><span class="study-date">08.2020 — 07.2023</span><h3>Phu Nhuan High School</h3><p>High School Diploma · Ho Chi Minh City, Vietnam</p><p>Final grade: Very Good.</p></div></div>
       <div class="coursework"><div class="coursework-head"><h3>Selected coursework</h3><span>FROM THE RWTH TRANSCRIPT</span></div><ul><li>Elements of Machine Learning and Data Science</li><li>Data Structures and Algorithms</li><li>Operating Systems and System Software</li><li>Artificial Intelligence in Music Data Analysis</li><li>Fundamentals of Automatic Speech Recognition</li><li>Foundations of Functional Programming</li></ul></div>
     </section>
 
-    <section class="practice section-shell" id="practice" aria-labelledby="practice-title"><div class="section-index"><span>04 / TECHNICAL PRACTICE</span><i aria-hidden="true"></i></div><div class="section-intro"><h2 id="practice-title">A working toolkit.</h2><p>The languages and tools below come from the CV and practical work, grouped by the kinds of problems they help solve.</p></div><div class="practice-table"><div><span class="practice-num">01</span><h3>Systems &amp; software</h3><p>Modern C++ (templates, compile-time evaluation); low-level C with AVR microcontrollers, registers, timers and interrupt service routines for LED matrices; Java; HTML, CSS, JavaScript and React.</p></div><div><span class="practice-num">02</span><h3>Learning &amp; data</h3><p>Python and PyTorch for machine-learning pipelines, including character-level language models and clinical data extraction; local Qwen and DeepSeek deployment; DeepLearning.AI courses on Coursera.</p></div><div><span class="practice-num">03</span><h3>Simulation &amp; workflow</h3><p>Unity and C# for 3D simulation, OpenStreetMap datasets for city generation, plus Git and LaTeX.</p></div></div></section>
+    <section class="practice section-shell" id="practice" aria-labelledby="practice-title"><div class="section-index"><span>04 / TECHNICAL PRACTICE</span><i aria-hidden="true"></i></div><div class="section-intro"><h2 id="practice-title">Tools in use.</h2><p>C and AVR for hardware; Python and PyTorch for machine learning; Unity and C# for simulations.</p></div><div class="practice-table"><div><span class="practice-num">01</span><h3>Systems &amp; software</h3><p>Modern C++ (templates, compile-time evaluation); low-level C with AVR microcontrollers, registers, timers and interrupt service routines for LED matrices; Java; HTML, CSS, JavaScript and React.</p></div><div><span class="practice-num">02</span><h3>Learning &amp; data</h3><p>Python and PyTorch for machine-learning pipelines, including character-level language models and clinical data extraction; local Qwen and DeepSeek deployment; DeepLearning.AI courses on Coursera.</p></div><div><span class="practice-num">03</span><h3>Simulation &amp; workflow</h3><p>Unity and C# for 3D simulation, OpenStreetMap datasets for city generation, plus Git and LaTeX.</p></div></div></section>
 
     <section class="recognition section-shell" aria-labelledby="recognition-title"><div class="section-index"><span>05 / RECOGNITION</span><i aria-hidden="true"></i></div><div class="recognition-layout"><div><h2 id="recognition-title">Awards &amp; languages.</h2><ol class="award-list"><li><span>2026</span><div><strong>Dean’s List</strong><small>RWTH Aachen University</small></div></li><li><span>2023</span><div><strong>Tin Hoc Tre Coding Competition</strong><small>2nd place</small></div></li><li><span>2023</span><div><strong>Coding Competition for Gifted Students</strong><small>3rd prize</small></div></li></ol></div><div class="spoken"><h3>Languages</h3><dl><div><dt>VI</dt><dd>Native</dd></div><div><dt>EN</dt><dd>Fluent · IELTS 8.0</dd></div><div><dt>DE</dt><dd>Proficient · TestDaF 19</dd></div></dl></div></div></section>
 
-    <section class="contact section-shell" id="contact" aria-labelledby="contact-title"><div class="section-index"><span>06 / CONTACT</span><i aria-hidden="true"></i></div><div class="contact-layout"><h2 id="contact-title">Let’s compare<br><em>working notes.</em></h2><div><p>I welcome conversations about simulation, machine learning, software engineering and research.</p><a class="contact-email" href="mailto:trong.phat.vo@rwth-aachen.de">trong.phat.vo@rwth-aachen.de <span aria-hidden="true">↗</span></a><a class="contact-github" href="https://github.com/peteVo" target="_blank" rel="noopener noreferrer">GITHUB / PETEVO ↗</a><span class="contact-place">AACHEN, GERMANY</span></div></div></section>
+    <section class="contact section-shell" id="contact" aria-labelledby="contact-title"><div class="section-index"><span>06 / CONTACT</span><i aria-hidden="true"></i></div><div class="contact-layout"><h2 id="contact-title">Write<br><em>to me.</em></h2><div><p>I welcome conversations about simulation, machine learning, software engineering and research.</p><a class="contact-email" href="mailto:trong.phat.vo@rwth-aachen.de">trong.phat.vo@rwth-aachen.de <span aria-hidden="true">↗</span></a><a class="contact-github" href="https://github.com/peteVo" target="_blank" rel="noopener noreferrer">GITHUB / PETEVO ↗</a><span class="contact-place">AACHEN, GERMANY</span></div></div></section>
   </main>
 
-  <footer class="footer section-shell"><span>© <span data-year>2026</span> TRONG PHAT VO</span><span>A portfolio of work in progress.</span><a href="#top">BACK TO TOP ↑</a></footer>
+  <footer class="footer section-shell"><span>© <span data-year>2026</span> TRONG PHAT VO</span><span>Computer Science / RWTH Aachen.</span><a href="#top">BACK TO TOP ↑</a></footer>
 </body>
 </html>

@@ -30,7 +30,8 @@
 </head>
 <body>
   <a class="skip-link" href="#main">{{ui.skip}}</a>
-  <header class="header" id="top">
+  <div id="top" aria-hidden="true"></div>
+  <header class="header">
     <div class="header-inner">
       <a class="brand" href="#top" aria-label="Trong Phat Vo"><span class="brand-mark">TPV<span>.</span></span><span class="brand-name">TRONG PHAT VO</span></a>
       <nav class="desktop-nav" aria-label="{{ui.primaryNav}}">
@@ -38,8 +39,8 @@
       </nav>
       <div class="header-controls">
         <label class="language-select"><span class="sr-only">{{ui.language}}</span><select data-language aria-label="{{ui.language}}"><option value="en" {{selectedEn}}>EN</option><option value="de" {{selectedDe}}>DE</option><option value="vi" {{selectedVi}}>VI</option></select></label>
-        <button class="icon-control theme-control" type="button" data-theme-toggle data-to-dark="{{ui.toDark}}" data-to-light="{{ui.toLight}}" aria-label="{{ui.toDark}}"><span aria-hidden="true">◐</span></button>
-        <button class="print-control" type="button" data-print aria-label="{{ui.print}}">{{ui.print}}</button>
+        <button class="icon-control theme-control" type="button" data-theme-toggle data-to-dark="{{ui.toDark}}" data-to-light="{{ui.toLight}}" aria-label="{{ui.toDark}}"><svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.2A8.5 8.5 0 0 1 9.8 4 8.5 8.5 0 1 0 20 14.2Z"/></svg><svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4m0-14.2-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></button>
+        <button class="print-control" type="button" data-print aria-label="{{ui.print}}"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 15h12v6H6zM18 12h1"/></svg><span>{{ui.print}}</span></button>
         <button class="menu-control" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="{{ui.openMenu}}" data-open-label="{{ui.openMenu}}" data-close-label="{{ui.closeMenu}}"><span></span><span></span></button>
       </div>
     </div>
@@ -72,13 +73,13 @@
               <path class="route" d="M28 443L82 394 244 371 300 314 422 225 574 170 630 116"/>
               <circle class="origin" cx="28" cy="443" r="8"/><circle class="destination" cx="630" cy="116" r="8"/><path class="cross" d="M630 90v52M604 116h52"/>
             </svg>
-            <span class="map-key">OSM DATA <span aria-hidden="true">→</span> UNITY WORLD</span>
+            <span class="map-key">{{hero.mapKeyFrom}} <span aria-hidden="true">→</span> {{hero.mapKeyTo}}</span>
             <span class="map-marker">A</span><span class="map-marker end">B</span>
           </div>
           <div class="plate-foot"><span>{{hero.plateFoot}}</span><span>UNITY · C# · OPENSTREETMAP</span></div>
         </div>
       </div>
-      <div class="hero-bottom"><span>RWTH AACHEN / COMPUTER SCIENCE</span><span>{{hero.scroll}} ↓</span></div>
+      <div class="hero-bottom"><span>{{hero.bottom}}</span><span>{{hero.scroll}} ↓</span></div>
     </section>
 
     <section class="orientation section-shell" id="about" aria-labelledby="about-title">
@@ -91,7 +92,7 @@
       <div class="section-intro"><h2 id="work-title">{{work.title}}</h2><p>{{work.intro}}</p></div>
       <article class="project project-lead">
         <div class="project-rail"><span>01 / {{work.one.category}}</span><span>06.2025 — {{time.present}}</span></div>
-        <div class="project-content"><p class="project-org">{{work.one.org}}</p><h3>{{work.one.title}}</h3><p class="project-summary">{{work.one.summary}}</p><div class="project-split"><div><span class="sub-index">A / FIZZY-BALL</span><h4>{{work.one.fizzyTitle}}</h4><p>{{work.one.fizzy}}</p></div><div><span class="sub-index">B / BICYCLE SIMULATION</span><h4>{{work.one.bicycleTitle}}</h4><p>{{work.one.bicycle}}</p></div></div><p class="project-footnote">{{work.one.school}}</p></div>
+        <div class="project-content"><p class="project-org">{{work.one.org}}</p><h3>{{work.one.title}}</h3><p class="project-summary">{{work.one.summary}}</p><div class="project-split"><div><span class="sub-index">A / {{work.one.fizzyType}}</span><h4>{{work.one.fizzyTitle}}</h4><p>{{work.one.fizzy}}</p></div><div><span class="sub-index">B / {{work.one.bicycleType}}</span><h4>{{work.one.bicycleTitle}}</h4><p>{{work.one.bicycle}}</p></div></div><p class="project-footnote">{{work.one.school}}</p></div>
       </article>
       <article class="project">
         <div class="project-rail"><span>02 / {{work.two.category}}</span><span>11.2024 — {{time.present}}</span></div>
@@ -114,7 +115,7 @@
 
     <section class="recognition section-shell" aria-labelledby="recognition-title"><div class="section-index"><span>05 / {{recognition.label}}</span><i aria-hidden="true"></i></div><div class="recognition-layout"><div><h2 id="recognition-title">{{recognition.title}}</h2><ol class="award-list"><li><span>2026</span><div><strong>Dean’s List</strong><small>RWTH Aachen University</small></div></li><li><span>2023</span><div><strong>Tin Hoc Tre Coding Competition</strong><small>{{recognition.second}}</small></div></li><li><span>2023</span><div><strong>{{recognition.gifted}}</strong><small>{{recognition.third}}</small></div></li></ol></div><div class="spoken"><h3>{{recognition.languages}}</h3><dl><div><dt>VI</dt><dd>{{recognition.vietnamese}}</dd></div><div><dt>EN</dt><dd>{{recognition.english}}</dd></div><div><dt>DE</dt><dd>{{recognition.german}}</dd></div></dl></div></div></section>
 
-    <section class="contact section-shell" id="contact" aria-labelledby="contact-title"><div class="section-index"><span>06 / {{contact.label}}</span><i aria-hidden="true"></i></div><div class="contact-layout"><h2 id="contact-title">{{contact.titleA}}<br><em>{{contact.titleB}}</em></h2><div><p>{{contact.body}}</p><a class="contact-email" href="mailto:trong.phat.vo@rwth-aachen.de">trong.phat.vo@rwth-aachen.de <span aria-hidden="true">↗</span></a><a class="contact-github" href="https://github.com/peteVo" target="_blank" rel="noopener noreferrer">GITHUB / PETEVO ↗</a><span class="contact-place">AACHEN, GERMANY</span></div></div></section>
+    <section class="contact section-shell" id="contact" aria-labelledby="contact-title"><div class="section-index"><span>06 / {{contact.label}}</span><i aria-hidden="true"></i></div><div class="contact-layout"><h2 id="contact-title">{{contact.titleA}}<br><em>{{contact.titleB}}</em></h2><div><p>{{contact.body}}</p><a class="contact-email" href="mailto:trong.phat.vo@rwth-aachen.de">trong.phat.vo@rwth-aachen.de <span aria-hidden="true">↗</span></a><a class="contact-github" href="https://github.com/peteVo" target="_blank" rel="noopener noreferrer">GITHUB / PETEVO ↗</a><span class="contact-place">{{contact.place}}</span></div></div></section>
   </main>
 
   <footer class="footer section-shell"><span>© <span data-year>2026</span> TRONG PHAT VO</span><span>{{footer.note}}</span><a href="#top">{{footer.top}} ↑</a></footer>
